@@ -13,9 +13,12 @@ html{
     scroll-behavior: smooth;
 }
 body {
+    width: 100%;
+    height: 100%;
     background-color: #E2E5F4;
-    font-size: 12pt;
+    font-size: 10pt;
     font-family: 'Inter', sans-serif;
+    color: white;
 }
 
 /* DEFININDO FONTES */
@@ -31,9 +34,11 @@ h1 {
     position: relative;
     width: 400px;
     height: 504px;
-    top: 100px;
-    left: 322px;
-    border-radius: 20px;
+    top: 130px;
+    left: 321px;
+    z-index: 1;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 .login {
     background-color: white;
@@ -41,9 +46,10 @@ h1 {
     position: relative;
     width: 400px;
     height: 504px;
-    top: 70px;
-    left: 322px;
-    border-radius: 20px;
+    top: 192px;
+    left: 319px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 .nao-tem-conta {
     background-color: white;
@@ -51,7 +57,93 @@ h1 {
     position: relative;
     width: 260px;
     height: 20px;
-    left: 800px;
+    left: 780px;
     top: -50px;
+}
+/*******************/
+
+/* DEFINIÇOES DA PARTE AZUL*/
+.welcome-content {
+    display: block;
+    position: relative;
+    left: 70px;
+    top: 170px;
+}
+.welcome-content h1 {
+    font-size: 20pt;
+}
+/*******************/
+
+/* DEFINIÇOES DA PARTE BRANCA */
+.login-content {
+    color: black;
+    display: block;
+    position: relative;
+    left: 50px;
+    top: 100px;
+}
+.login-content h1 {
+    color:#384DB4
+}
+.login-content p {
+    font-size: 8pt;
+}
+.login-content p span {
+    color: blue;
+}
+.login-content p span:hover {
+    color: black;
+}
+/* CONFIGURAÇAO DO INPUT */
+input {
+    border-radius: 20px;
+    padding: 20px;
+    margin: 2px;
+    border: none;
+    background-color: #E2E5F4;
+    width: 265px;
+    height: 30px;
+}
+input::placeholder {
+    color: black;
+    text-align: center;
+}
+/*******************/
+ 
+/* CONFIGURACÃO DO BOTAO */
+button {
+    background-color: #384DB4;
+    border: none;
+    width: 265px;
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 25px;
+}
+button:hover {
+    color: #384DB4;
+    background-color: #E2E5F4;
+}
+button a:hover {
+    color: black;
+}
+button a {
+    color: white;
+}
+/*******************/
+
+.nao-tem-conta {
+    padding-top: 25px;
+    border-top: 0.3px solid #000000;
+    text-align: center;
+}
+.nao-tem-conta p {
+    color: black;
+}
+.nao-tem-conta p span {
+    color: blue;
+}
+.nao-tem-conta p span:hover {
+    color: black;
 }
 /*******************/

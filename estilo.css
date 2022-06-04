@@ -1,0 +1,57 @@
+/* IMPORTANDO AS FONTES*/
+@import url('https://fonts.googleapis.com/css2?family=Sarala&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+/*******************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #E2E5F4;
+    font-size: 12pt;
+    font-family: 'Inter', sans-serif;
+}
+
+/* DEFININDO FONTES */
+h1 {
+    font-family: 'Sarala', sans-serif;
+}
+/*******************/
+
+/* DEFININDO OS LAYOUTS */
+.welcome {
+    background-color: #384DB4;
+    display: inline-block;
+    position: relative;
+    width: 400px;
+    height: 504px;
+    top: 100px;
+    left: 322px;
+    border-radius: 20px;
+}
+.login {
+    background-color: white;
+    display: inline-block;
+    position: relative;
+    width: 400px;
+    height: 504px;
+    top: 70px;
+    left: 322px;
+    border-radius: 20px;
+}
+.nao-tem-conta {
+    background-color: white;
+    display: block;
+    position: relative;
+    width: 260px;
+    height: 20px;
+    left: 800px;
+    top: -50px;
+}
+/*******************/

@@ -24,6 +24,7 @@ body {
 /* DEFININDO FONTES */
 h1 {
     font-family: 'Sarala', sans-serif;
+    font-size: 20pt;
 }
 /*******************/
 
@@ -34,7 +35,7 @@ h1 {
     position: relative;
     width: 400px;
     height: 504px;
-    top: 130px;
+    top: 155px;
     left: 321px;
     z-index: 1;
     border-top-left-radius: 20px;
@@ -46,31 +47,24 @@ h1 {
     position: relative;
     width: 400px;
     height: 504px;
-    top: 192px;
+    top: 156px;
     left: 319px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 }
 .nao-tem-conta {
-    background-color: white;
-    display: block;
-    position: relative;
-    width: 260px;
-    height: 20px;
-    left: 780px;
-    top: -50px;
+    position: absolute;
+    top: 290px;
+    left: 30px;
 }
 /*******************/
 
 /* DEFINIÇOES DA PARTE AZUL*/
 .welcome-content {
     display: block;
-    position: relative;
+    position: absolute;
     left: 70px;
     top: 170px;
-}
-.welcome-content h1 {
-    font-size: 20pt;
 }
 /*******************/
 
@@ -78,14 +72,15 @@ h1 {
 .login-content {
     color: black;
     display: block;
-    position: relative;
-    left: 50px;
+    position: absolute;
+    left: 75px;
     top: 100px;
 }
 .login-content h1 {
-    color:#384DB4
+    color:#384DB4;
+    margin-bottom: 10px;
 }
-.login-content p {
+.esqueceu-a-senha {
     font-size: 8pt;
 }
 .login-content p span {
@@ -129,6 +124,7 @@ button a:hover {
 }
 button a {
     color: white;
+    font-size: 20pt;
 }
 /*******************/
 
@@ -147,3 +143,12 @@ button a {
     color: black;
 }
 /*******************/
+
+@media screen and (max-width: 800px) {
+    .welcome {
+        display: none;
+    }
+    .login {
+        border-radius: 20px;
+    }
+}

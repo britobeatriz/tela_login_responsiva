@@ -13,21 +13,22 @@ html{
     scroll-behavior: smooth;
 }
 body {
-    width: 100%;
-    height: 100%;
     background-color: #E2E5F4;
     font-size: 10pt;
     font-family: 'Inter', sans-serif;
     color: white;
+    min-height: 100vh;
+    min-width: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
 /* DEFININDO FONTES */
 h1 {
     font-family: 'Sarala', sans-serif;
     font-size: 20pt;
 }
 /*******************/
-
 /* DEFININDO OS LAYOUTS */
 .welcome {
     background-color: #384DB4;
@@ -35,9 +36,6 @@ h1 {
     position: relative;
     width: 400px;
     height: 504px;
-    top: 155px;
-    left: 321px;
-    z-index: 1;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
@@ -47,8 +45,6 @@ h1 {
     position: relative;
     width: 400px;
     height: 504px;
-    top: 156px;
-    left: 319px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 }
@@ -150,5 +146,8 @@ button a {
     }
     .login {
         border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }

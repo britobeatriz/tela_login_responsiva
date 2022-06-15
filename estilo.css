@@ -94,6 +94,7 @@ input {
     background-color: #E2E5F4;
     width: 265px;
     height: 30px;
+    outline: none;
 }
 input::placeholder {
     color: black;
